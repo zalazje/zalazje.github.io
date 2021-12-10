@@ -6,6 +6,11 @@
     <title>Залазье</title>
   </head>
   <body>
-<script>location.pathname = '/home';</script>
+<script>
+  if (env.production) {
+      location.pathname = '/home';
+  }
+</script>
+<div id="root"></div>
 </body>
 </html>
