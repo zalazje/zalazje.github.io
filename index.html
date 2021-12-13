@@ -7,7 +7,9 @@
   </head>
   <body>
 <script>
-    location.pathname = '/home';
+  if (typeof env !== 'undefined' && env.production) {
+      location.pathname = '/home';
+  }
 </script>
 <div id="root"></div>
 </body>
